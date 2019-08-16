@@ -1,0 +1,19 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+//---------------------------
+using namespace std;
+
+void main()
+{
+	float suma,a,b;
+	cout<< "ingresar un numero a:";
+	cin>> a;
+	cout<< "ingresar un numero b:";
+	cin>> b;
+	suma=a+b;
+	cout<< "resultado:";
+	cout<< suma;
+	getch();
+}
