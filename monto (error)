@@ -1,0 +1,32 @@
+// monto.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main ()
+{ 
+	float m,d1,d2,d3,d4;
+	cout<< "ingrese el monto:"<<endl;
+	cin>> m;
+	 if (m>0&&m<0500)
+	 {
+		 d1= m*0,0;
+	 } else {
+		 if (m>501&&m<=1000)
+		 		 d2= m*0,05;
+	 } else
+	 {
+		 if (m>1001&&m<=2000)
+		 
+			 d3=m*0,10;
+	 }else 
+	 {
+		 if (m>2000)
+		 {
+			 d4=m*0,20;
+	 } else { cout<<"opcion invalida"<<endl;
+	 } cout<<"el resultado es:"<<m<<endl;
+	 getch();
+}
