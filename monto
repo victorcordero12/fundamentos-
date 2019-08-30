@@ -1,6 +1,6 @@
 // promedio2.cpp : Defines the entry point for the console application.
 //
-
+//ejercicio 20:monto de sus compras(descuento)
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
@@ -20,7 +20,7 @@ void main()
 		   { 
 			   d=m*0.05;
 		   } else{
-			   if(m>1001&&m<=2000)
+			   if(m>=1001&&m<=2000)
 			   {
 				   d=m*0.10;
 			   } else{
