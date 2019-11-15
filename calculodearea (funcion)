@@ -1,0 +1,26 @@
+// calculodelarea.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+float calculodelarea(int l);
+
+void main()
+{
+	int A,a,l;
+	cout<<"ingrese el lado: "<<endl;
+	cin>>l;
+	A=calculodelarea(l);
+	cout<<"el resultado del area es: "<<endl;
+	cout<<A;
+	getch();
+}
+
+float calculodelarea(int l)
+{ float A;
+	A= l*l;
+  return A;
+}
