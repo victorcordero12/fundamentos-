@@ -1,0 +1,60 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+float Area_cuadrado(int l);
+float Area_circulo(int l);
+float Area_sombra(int l);
+
+void main()
+{
+	int lado,opcion;
+	float area;
+	do{
+		cout<<"pedir lado"<<endl;
+		cin>>lado;
+		cout<<"----MENU----"<<endl;
+		cout<<"1.sacar area cuadrado"<<endl;
+		cout<<"2.sacar area circulo"<<endl;
+		cout<<"3.sacar area sombreada"<<endl;
+		cout<<"4.salir"<<endl;
+		cin>>opcion;
+		switch(opcion){
+		case 1: area = Area_cuadrado(lado);
+			cout<< area;
+			break;
+		case 2: area = Area_circulo(lado);
+			cout<< area;
+		case 3: area = Area_sombra (lado);
+			cout<< area;
+			break;
+		case 4: cout<<"salir";
+			break;
+		default: cout<<"error"<<endl;
+			break;
+		}
+	}while(opcion!=4);
+	getch();
+}
+float Area_cuadrado(int l)
+{
+	float area; 
+		area= l*l;
+	return area;
+}
+
+float Area_circulo(int l)
+{
+	float area;
+	area = (l/2)*(l/2)*3.1416;
+	return area;
+}
+
+float Area_sombra(int l)
+{
+	float area;
+	area = Area_cuadrado(l)-Area_circulo(l);
+	return area;
+}
